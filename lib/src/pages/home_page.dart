@@ -14,8 +14,15 @@ class HomePage extends StatelessWidget {
             )
           ],
         ),
-        body: SafeArea(
-          child: Text('Hola Mundo'),
-        ));
+        body: Container(child: Column(children: <Widget>[
+          _swipTarjetas()
+        ],),)
+        );
   }
+  Widget _swipTarjetas()
+  {
+        return Container();
+  }
+
+
 }
