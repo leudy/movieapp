@@ -17,11 +17,11 @@ class HomePage extends StatelessWidget {
           ],
         ),
         body: Container(child: Column(children: <Widget>[
-          _CrearTarjetas()
-        ],),);
+          _crearTarjetas()
+        ],);
   }
 
-  Widget _CrearTarjetas() {
+  Widget _crearTarjetas() {
     return Container(
       padding: EdgeInsets.only(top: 10.0),
       width: double.infinity,
