@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
-
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -16,9 +15,10 @@ class HomePage extends StatelessWidget {
             )
           ],
         ),
-        body: Container(child: Column(children: <Widget>[
-          _crearTarjetas()
-        ],);
+        body: Container(
+            child: Column(
+          children: <Widget>[_crearTarjetas()],
+        )));
   }
 
   Widget _crearTarjetas() {
@@ -29,8 +29,11 @@ class HomePage extends StatelessWidget {
       child: new Swiper(
         layout: SwiperLayout.STACK,
         itemWidth: 250.0,
-        itemBuilder: (BuildContext context,int index){
-          return new Image.network("http://via.placeholder.com/350x150",fit: BoxFit.fill,);
+        itemBuilder: (BuildContext context, int index) {
+          return new Image.network(
+            "http://via.placeholder.com/350x150",
+            fit: BoxFit.fill,
+          );
         },
         itemCount: 3,
         pagination: new SwiperPagination(),
